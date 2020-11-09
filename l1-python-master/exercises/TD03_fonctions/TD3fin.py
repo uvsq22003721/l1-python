@@ -52,3 +52,31 @@ def sommeTemps(temps1,temps2):
     return secondeEnTemps(tempsEnSeconde(temps1) + tempsEnSeconde(temps2))
 
 sommeTemps((2,3,4,25),(5,22,57,1))
+
+def proportionTemps(temps ,proportion):
+     return proportionTemps(proportion, temps)
+afficheTemps(proportionTemps((2 ,0 ,36 ,0) ,0.2))
+#appeler la fonction en échangeant l'ordre des arguments
+
+
+def tempsEnDate(temps):
+    minute = seconde // 60
+    seconde %= 60
+    heure = minute // 60
+    minute %= 60
+    jour = heure //24
+    heure %= 24
+    année = jour // 365
+    jour %= 365
+    return (année, jour, heure, minute, seconde)
+print(temps[0],"année",temps[1],"jours",temps[2],"heures",temps[3],"minutes", temps[4],"secondes")
+
+
+def afficheDate(date = -1):
+    pass
+
+
+temps = secondeEnTemps(1000000000)
+afficheTemps(temps)
+afficheDate(tempsEnDate(temps))
+afficheDate()
