@@ -120,6 +120,6 @@ def verifie(liste_temps):
     return temps_total <= tempsEnSeconde((0,140,0,0))
 
 
-liste_temps = [[1,2,39,34],[0,1,9,4],[0,29,39,51],[0,31,13,46]]
+liste_temps = [[1, 2, 39, 34], [0, 1, 9, 4], [0, 29, 39 ,51], [0, 31, 13, 46]]
 print(verifie(liste_temps))
 
