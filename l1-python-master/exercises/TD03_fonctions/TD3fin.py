@@ -12,7 +12,7 @@ def secondeEnTemps(seconde):
     seconde %= 60
     heure = minute // 60
     minute %= 60
-    jour = heure //24
+    jours = heure //24
     heure %= 24
     return (jour, heure, minute, seconde)
     
